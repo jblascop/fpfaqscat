@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>14 Altres | FAQ Laboratori de Fonaments de Programació</title>
+  <meta name="description" content="FAQ del Laboratori de Fonaments de Programació" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="14 Altres | FAQ Laboratori de Fonaments de Programació" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="FAQ del Laboratori de Fonaments de Programació" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="14 Altres | FAQ Laboratori de Fonaments de Programació" />
+  
+  <meta name="twitter:description" content="FAQ del Laboratori de Fonaments de Programació" />
+  
+
+<meta name="author" content="Jordi Blasco Planesas" />
+
+
+<meta name="date" content="2020-06-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="vmware-i-codelite.html"/>
+
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168787497-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168787497-1');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"><img src="./img/uoc.png" width="100"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducció</a></li>
+<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorísmic"><i class="fa fa-check"></i><b>1.1</b> Llenguatge algorísmic</a></li>
+<li class="chapter" data-level="1.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorísmic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="1.3" data-path="pac01.html"><a href="pac01.html#equivalències-llenguatge-algorísmic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.3</b> Equivalències llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="1.4" data-path="pac01.html"><a href="pac01.html#impressió-de-valors-incorrecta"><i class="fa fa-check"></i><b>1.4</b> Impressió de valors incorrecta</a></li>
+<li class="chapter" data-level="1.5" data-path="pac01.html"><a href="pac01.html#com-definir-un-enumeratiu"><i class="fa fa-check"></i><b>1.5</b> Com definir un enumeratiu</a></li>
+<li class="chapter" data-level="1.6" data-path="pac01.html"><a href="pac01.html#com-utilitzar-un-enumeratiu"><i class="fa fa-check"></i><b>1.6</b> Com utilitzar un enumeratiu</a></li>
+<li class="chapter" data-level="1.7" data-path="pac01.html"><a href="pac01.html#especificador-dun-enumeratiu"><i class="fa fa-check"></i><b>1.7</b> Especificador d’un enumeratiu</a></li>
+<li class="chapter" data-level="1.8" data-path="pac01.html"><a href="pac01.html#lectura-de-caràcters-en-c"><i class="fa fa-check"></i><b>1.8</b> Lectura de caràcters en C</a></li>
+<li class="chapter" data-level="1.9" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>1.9</b> Lectura de float en C</a></li>
+<li class="chapter" data-level="1.10" data-path="pac01.html"><a href="pac01.html#frequently-made-mistakes"><i class="fa fa-check"></i><b>1.10</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="1.10.1" data-path="pac01.html"><a href="pac01.html#definició-de-tipus-tipus-booleà"><i class="fa fa-check"></i><b>1.10.1</b> Definició de tipus: tipus booleà</a></li>
+<li class="chapter" data-level="1.10.2" data-path="pac01.html"><a href="pac01.html#estil-i-format-absència-destil-i-format-en-llenguatge-algorísmic"><i class="fa fa-check"></i><b>1.10.2</b> Estil i format: absència d’estil i format en llenguatge algorísmic</a></li>
+<li class="chapter" data-level="1.10.3" data-path="pac01.html"><a href="pac01.html#declaració-de-variables-identificadors-no-permesos"><i class="fa fa-check"></i><b>1.10.3</b> Declaració de variables: identificadors no permesos</a></li>
+<li class="chapter" data-level="1.10.4" data-path="pac01.html"><a href="pac01.html#declaració-de-variables-operador-de-declaració"><i class="fa fa-check"></i><b>1.10.4</b> Declaració de variables: operador de declaració</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="pac02.html"><a href="pac02.html#booleans-en-c"><i class="fa fa-check"></i><b>2.1</b> Booleans en C</a></li>
+<li class="chapter" data-level="2.2" data-path="pac02.html"><a href="pac02.html#booleans-definits-com-a-enumeratius"><i class="fa fa-check"></i><b>2.2</b> Booleans definits com a enumeratius</a></li>
+<li class="chapter" data-level="2.3" data-path="pac02.html"><a href="pac02.html#constants-define-vs-const"><i class="fa fa-check"></i><b>2.3</b> Constants: define vs const</a></li>
+<li class="chapter" data-level="2.4" data-path="pac02.html"><a href="pac02.html#com-mostrar-el-valor-duna-constant"><i class="fa fa-check"></i><b>2.4</b> Com mostrar el valor d’una constant</a></li>
+<li class="chapter" data-level="2.5" data-path="pac02.html"><a href="pac02.html#precisió-en-variables-float"><i class="fa fa-check"></i><b>2.5</b> Precisió en variables float</a></li>
+<li class="chapter" data-level="2.6" data-path="pac02.html"><a href="pac02.html#semàntica-duna-expressió"><i class="fa fa-check"></i><b>2.6</b> Semàntica d’una expressió</a></li>
+<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>2.7.1</b> Exemple 1: esParell</a></li>
+<li class="chapter" data-level="2.7.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>2.7.2</b> Exemple 2: capDeSetmana</a></li>
+<li class="chapter" data-level="2.7.3" data-path="pac02.html"><a href="pac02.html#exemple-3-esvocal"><i class="fa fa-check"></i><b>2.7.3</b> Exemple 3: esVocal</a></li>
+<li class="chapter" data-level="2.7.4" data-path="pac02.html"><a href="pac02.html#exemple-4-votacions"><i class="fa fa-check"></i><b>2.7.4</b> Exemple 4: votacions</a></li>
+<li class="chapter" data-level="2.7.5" data-path="pac02.html"><a href="pac02.html#exemple-5-gintonicpreparation"><i class="fa fa-check"></i><b>2.7.5</b> Exemple 5: ginTonicPreparation</a></li>
+<li class="chapter" data-level="2.7.6" data-path="pac02.html"><a href="pac02.html#exemple-6-gintonicfreeml"><i class="fa fa-check"></i><b>2.7.6</b> Exemple 6: ginTonicFreeMl</a></li>
+<li class="chapter" data-level="2.7.7" data-path="pac02.html"><a href="pac02.html#exemple-7-scoutingbasquet"><i class="fa fa-check"></i><b>2.7.7</b> Exemple 7: scoutingBasquet</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="pac02.html"><a href="pac02.html#frequently-made-mistakes-1"><i class="fa fa-check"></i><b>2.8</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="2.8.1" data-path="pac02.html"><a href="pac02.html#interfície-dusuari-absència-de-textos-informatius"><i class="fa fa-check"></i><b>2.8.1</b> Interfície d’usuari: absència de textos informatius</a></li>
+<li class="chapter" data-level="2.8.2" data-path="pac02.html"><a href="pac02.html#caràcters-ús-de-cometes-simples"><i class="fa fa-check"></i><b>2.8.2</b> Caràcters: ús de cometes simples</a></li>
+<li class="chapter" data-level="2.8.3" data-path="pac02.html"><a href="pac02.html#sintaxi-pròpia-de-c-funcions-de-lecturaescriptura"><i class="fa fa-check"></i><b>2.8.3</b> Sintaxi pròpia de C: funcions de lectura/escriptura</a></li>
+<li class="chapter" data-level="2.8.4" data-path="pac02.html"><a href="pac02.html#conversió-de-tipus-funcions-inexistents"><i class="fa fa-check"></i><b>2.8.4</b> Conversió de tipus: funcions inexistents</a></li>
+<li class="chapter" data-level="2.8.5" data-path="pac02.html"><a href="pac02.html#expressions-variables-intermitges"><i class="fa fa-check"></i><b>2.8.5</b> Expressions: variables intermitges</a></li>
+<li class="chapter" data-level="2.8.6" data-path="pac02.html"><a href="pac02.html#declaració-de-variables-declaració-mal-ubicada-bloc-central-de-codi"><i class="fa fa-check"></i><b>2.8.6</b> Declaració de variables: declaració mal ubicada (bloc central de codi)</a></li>
+<li class="chapter" data-level="2.8.7" data-path="pac02.html"><a href="pac02.html#declaració-de-variables-declaració-mal-ubicada-variables-globals"><i class="fa fa-check"></i><b>2.8.7</b> Declaració de variables: declaració mal ubicada (variables globals)</a></li>
+<li class="chapter" data-level="2.8.8" data-path="pac02.html"><a href="pac02.html#tipus-booleà-valors-numèrics"><i class="fa fa-check"></i><b>2.8.8</b> Tipus booleà: valors numèrics</a></li>
+<li class="chapter" data-level="2.8.9" data-path="pac02.html"><a href="pac02.html#tipus-booleà-cadenes-de-caràcters"><i class="fa fa-check"></i><b>2.8.9</b> Tipus booleà: cadenes de caràcters</a></li>
+<li class="chapter" data-level="2.8.10" data-path="pac02.html"><a href="pac02.html#sintaxi-pròpia-de-c-operadors"><i class="fa fa-check"></i><b>2.8.10</b> Sintaxi pròpia de C: operadors</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="pac03.html"><a href="pac03.html#com-declarar-un-vector-en-llenguatge-algorísmic"><i class="fa fa-check"></i><b>3.1</b> Com declarar un vector en llenguatge algorísmic</a></li>
+<li class="chapter" data-level="3.2" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>3.2</b> Significat dels arguments del main</a></li>
+<li class="chapter" data-level="3.3" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>3.3</b> Assignar valors a un vector</a></li>
+<li class="chapter" data-level="3.4" data-path="pac03.html"><a href="pac03.html#stack-smashing-detected"><i class="fa fa-check"></i><b>3.4</b> Stack smashing detected</a></li>
+<li class="chapter" data-level="3.5" data-path="pac03.html"><a href="pac03.html#concatenació-en-llenguatge-algorísmic"><i class="fa fa-check"></i><b>3.5</b> Concatenació en llenguatge algorísmic</a></li>
+<li class="chapter" data-level="3.6" data-path="pac03.html"><a href="pac03.html#importància-dels-tipus-utilitzats-en-llenguatge-c"><i class="fa fa-check"></i><b>3.6</b> Importància dels tipus utilitzats en llenguatge C</a></li>
+<li class="chapter" data-level="3.7" data-path="pac03.html"><a href="pac03.html#exemple-notafinal"><i class="fa fa-check"></i><b>3.7</b> Exemple: notaFinal</a></li>
+<li class="chapter" data-level="3.8" data-path="pac03.html"><a href="pac03.html#frequently-made-mistakes-2"><i class="fa fa-check"></i><b>3.8</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="pac03.html"><a href="pac03.html#strings-declaració-com-a-vectors-de-caràcters-en-llenguatge-algorísmic"><i class="fa fa-check"></i><b>3.8.1</b> Strings: declaració com a vectors de caràcters en llenguatge algorísmic</a></li>
+<li class="chapter" data-level="3.8.2" data-path="pac03.html"><a href="pac03.html#sintaxi-pròpia-de-c-funcions-complexes"><i class="fa fa-check"></i><b>3.8.2</b> Sintaxi pròpia de C: funcions complexes</a></li>
+<li class="chapter" data-level="3.8.3" data-path="pac03.html"><a href="pac03.html#estructura-alternativa-ifs-consecutius"><i class="fa fa-check"></i><b>3.8.3</b> Estructura alternativa: if’s consecutius</a></li>
+<li class="chapter" data-level="3.8.4" data-path="pac03.html"><a href="pac03.html#estructura-alternativa-ifs-buits"><i class="fa fa-check"></i><b>3.8.4</b> Estructura alternativa: if’s buits</a></li>
+<li class="chapter" data-level="3.8.5" data-path="pac03.html"><a href="pac03.html#estructura-alternativa-interrompre-un-algorisme-i"><i class="fa fa-check"></i><b>3.8.5</b> Estructura alternativa: interrompre un algorisme (I)</a></li>
+<li class="chapter" data-level="3.8.6" data-path="pac03.html"><a href="pac03.html#estructura-alternativa-interrompre-un-algorisme-ii"><i class="fa fa-check"></i><b>3.8.6</b> Estructura alternativa: interrompre un algorisme (II)</a></li>
+<li class="chapter" data-level="3.8.7" data-path="pac03.html"><a href="pac03.html#constants-i-nombres-valors-numèrics-al-codi-hardcode"><i class="fa fa-check"></i><b>3.8.7</b> Constants i nombres: Valors numèrics al codi (hardcode)</a></li>
+<li class="chapter" data-level="3.8.8" data-path="pac03.html"><a href="pac03.html#constants-declaració-de-constants-mal-ubicada"><i class="fa fa-check"></i><b>3.8.8</b> Constants: declaració de constants mal ubicada</a></li>
+<li class="chapter" data-level="3.8.9" data-path="pac03.html"><a href="pac03.html#strings-comparació-directa"><i class="fa fa-check"></i><b>3.8.9</b> Strings: comparació directa</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>4.1</b> Com tractar elements d’un vector amb un bucle</a></li>
+<li class="chapter" data-level="4.2" data-path="pac04.html"><a href="pac04.html#entrada-contínua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>4.2</b> Entrada contínua de valors amb un bucle</a></li>
+<li class="chapter" data-level="4.3" data-path="pac04.html"><a href="pac04.html#com-tractar-valors-en-múltiples-vectors"><i class="fa fa-check"></i><b>4.3</b> Com tractar valors en múltiples vectors</a></li>
+<li class="chapter" data-level="4.4" data-path="pac04.html"><a href="pac04.html#definició-chars-vs-strings"><i class="fa fa-check"></i><b>4.4</b> Definició chars vs strings</a></li>
+<li class="chapter" data-level="4.5" data-path="pac04.html"><a href="pac04.html#exemple-mitjanapes"><i class="fa fa-check"></i><b>4.5</b> Exemple: mitjanaPes</a></li>
+<li class="chapter" data-level="4.6" data-path="pac04.html"><a href="pac04.html#frequently-made-mistakes-3"><i class="fa fa-check"></i><b>4.6</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="pac04.html"><a href="pac04.html#estructura-iterativa-for-vs-while"><i class="fa fa-check"></i><b>4.6.1</b> Estructura iterativa: for vs while</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#strcmp"><i class="fa fa-check"></i><b>5.1</b> strcmp()</a></li>
+<li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#scanf"><i class="fa fa-check"></i><b>5.2</b> scanf()</a></li>
+<li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.3</b> El finalitzador ‘\0’ i strcmp()</a></li>
+<li class="chapter" data-level="5.4" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strlen"><i class="fa fa-check"></i><b>5.4</b> El finalitzador ‘\0’ i strlen()</a></li>
+<li class="chapter" data-level="5.5" data-path="pac05.html"><a href="pac05.html#exemple-comparaciostrings"><i class="fa fa-check"></i><b>5.5</b> Exemple: comparacioStrings</a></li>
+<li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#exemple-nòmines"><i class="fa fa-check"></i><b>5.6</b> Exemple: nòmines</a></li>
+<li class="chapter" data-level="5.7" data-path="pac05.html"><a href="pac05.html#exemple-brisca"><i class="fa fa-check"></i><b>5.7</b> Exemple: brisca</a></li>
+<li class="chapter" data-level="5.8" data-path="pac05.html"><a href="pac05.html#frequently-made-mistakes-4"><i class="fa fa-check"></i><b>5.8</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="5.8.1" data-path="pac05.html"><a href="pac05.html#definició-de-tipus-definició-de-tuples-mal-ubicada"><i class="fa fa-check"></i><b>5.8.1</b> Definició de tipus: definició de tuples mal ubicada</a></li>
+<li class="chapter" data-level="5.8.2" data-path="pac05.html"><a href="pac05.html#definició-de-tipus-definició-mal-ubicada"><i class="fa fa-check"></i><b>5.8.2</b> Definició de tipus: definició mal ubicada</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferències-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="pac06.html"><a href="pac06.html#paràmetres-dentrada-in"><i class="fa fa-check"></i><b>6.1.1</b> Paràmetres d’entrada (in)</a></li>
+<li class="chapter" data-level="6.1.2" data-path="pac06.html"><a href="pac06.html#paràmetres-de-sortida-out"><i class="fa fa-check"></i><b>6.1.2</b> Paràmetres de sortida (out)</a></li>
+<li class="chapter" data-level="6.1.3" data-path="pac06.html"><a href="pac06.html#paràmetres-dentradasortida-inout"><i class="fa fa-check"></i><b>6.1.3</b> Paràmetres d’entrada/sortida (inout)</a></li>
+<li class="chapter" data-level="6.1.4" data-path="pac06.html"><a href="pac06.html#tuples-com-a-paràmetres"><i class="fa fa-check"></i><b>6.1.4</b> Tuples com a paràmetres</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="pac06.html"><a href="pac06.html#exemple-ús-daccions"><i class="fa fa-check"></i><b>6.2</b> Exemple: ús d’accions</a></li>
+<li class="chapter" data-level="6.3" data-path="pac06.html"><a href="pac06.html#exemple-ús-de-funcions"><i class="fa fa-check"></i><b>6.3</b> Exemple: ús de funcions</a></li>
+<li class="chapter" data-level="6.4" data-path="pac06.html"><a href="pac06.html#exemple-nòmines-1"><i class="fa fa-check"></i><b>6.4</b> Exemple: nòmines</a></li>
+<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="pac06.html"><a href="pac06.html#explicació-sobre-lacció-copiarjugadora"><i class="fa fa-check"></i><b>6.5.1</b> Explicació sobre l’acció copiarJugadora()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="pac06.html"><a href="pac06.html#frequently-made-mistakes-5"><i class="fa fa-check"></i><b>6.6</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="pac06.html"><a href="pac06.html#definició-daccionsfuncions-noms-de-paràmetres"><i class="fa fa-check"></i><b>6.6.1</b> Definició d’accions/funcions: noms de paràmetres</a></li>
+<li class="chapter" data-level="6.6.2" data-path="pac06.html"><a href="pac06.html#definició-daccionsfuncions-tipus-de-paràmetres"><i class="fa fa-check"></i><b>6.6.2</b> Definició d’accions/funcions: tipus de paràmetres</a></li>
+<li class="chapter" data-level="6.6.3" data-path="pac06.html"><a href="pac06.html#definició-de-funcions-tipus-de-dades-de-retorn"><i class="fa fa-check"></i><b>6.6.3</b> Definició de funcions: tipus de dades de retorn</a></li>
+<li class="chapter" data-level="6.6.4" data-path="pac06.html"><a href="pac06.html#definició-daccions-retorn-de-valor"><i class="fa fa-check"></i><b>6.6.4</b> Definició d’accions: retorn de valor</a></li>
+<li class="chapter" data-level="6.6.5" data-path="pac06.html"><a href="pac06.html#definició-daccionsfuncions-accions-obertes"><i class="fa fa-check"></i><b>6.6.5</b> Definició d’accions/funcions: accions obertes</a></li>
+<li class="chapter" data-level="6.6.6" data-path="pac06.html"><a href="pac06.html#crida-a-funcionsaccions-tipus-de-paràmetres"><i class="fa fa-check"></i><b>6.6.6</b> Crida a funcions/accions: tipus de paràmetres</a></li>
+<li class="chapter" data-level="6.6.7" data-path="pac06.html"><a href="pac06.html#crida-a-accionsfuncions-paraules-reservades"><i class="fa fa-check"></i><b>6.6.7</b> Crida a accions/funcions: paraules reservades</a></li>
+<li class="chapter" data-level="6.6.8" data-path="pac06.html"><a href="pac06.html#crida-a-funcions-crida-buida"><i class="fa fa-check"></i><b>6.6.8</b> Crida a funcions: crida buida</a></li>
+<li class="chapter" data-level="6.6.9" data-path="pac06.html"><a href="pac06.html#crida-a-funcions-absència-de-paràmetres"><i class="fa fa-check"></i><b>6.6.9</b> Crida a funcions: absència de paràmetres</a></li>
+<li class="chapter" data-level="6.6.10" data-path="pac06.html"><a href="pac06.html#crida-a-funcions-errors-de-sintaxi-múltiples"><i class="fa fa-check"></i><b>6.6.10</b> Crida a funcions: errors de sintaxi múltiples</a></li>
+<li class="chapter" data-level="6.6.11" data-path="pac06.html"><a href="pac06.html#definició-de-funcions-funcions-dins-el-main"><i class="fa fa-check"></i><b>6.6.11</b> Definició de funcions: funcions dins el main</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="pac07.html"><a href="pac07.html#quan-utilitzar-dins-de-funcionsaccions"><i class="fa fa-check"></i><b>7.1</b> Quan utilitzar &amp; dins de funcions/accions</a></li>
+<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="pac07.html"><a href="pac07.html#funcionament-per-defecte-dun-projecte-a-codelite"><i class="fa fa-check"></i><b>7.2.1</b> Funcionament per defecte d’un projecte a CodeLite:</a></li>
+<li class="chapter" data-level="7.2.2" data-path="pac07.html"><a href="pac07.html#executable-dins-de-bin."><i class="fa fa-check"></i><b>7.2.2</b> Executable dins de /bin.</a></li>
+<li class="chapter" data-level="7.2.3" data-path="pac07.html"><a href="pac07.html#modularització-del-programa-en-un-arxiu-de-capçaleres-i-un-de-funcions."><i class="fa fa-check"></i><b>7.2.3</b> Modularització del programa en un arxiu de capçaleres i un de funcions.</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="pac07.html"><a href="pac07.html#tipus-de-paràmetres-en-accions-i-funcions"><i class="fa fa-check"></i><b>7.3</b> Tipus de paràmetres en accions i funcions</a></li>
+<li class="chapter" data-level="7.4" data-path="pac07.html"><a href="pac07.html#scanf-acció-o-funció"><i class="fa fa-check"></i><b>7.4</b> scanf(): acció o funció?</a></li>
+<li class="chapter" data-level="7.5" data-path="pac07.html"><a href="pac07.html#pas-per-valor-vs-pas-per-referència"><i class="fa fa-check"></i><b>7.5</b> Pas per valor vs pas per referència</a></li>
+<li class="chapter" data-level="7.6" data-path="pac07.html"><a href="pac07.html#exemple-capgirarparaula"><i class="fa fa-check"></i><b>7.6</b> Exemple: capgirarParaula</a></li>
+<li class="chapter" data-level="7.7" data-path="pac07.html"><a href="pac07.html#exemple-isparell"><i class="fa fa-check"></i><b>7.7</b> Exemple: isParell</a></li>
+<li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple-pivotdefensiutirslliures"><i class="fa fa-check"></i><b>7.8</b> Exemple: pivotDefensiuTirsLliures</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>8.1</b> Com inicialitzar una taula</a></li>
+<li class="chapter" data-level="8.2" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota"><i class="fa fa-check"></i><b>8.2</b> Exemple: calcularNota</a></li>
+<li class="chapter" data-level="8.3" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota-amb-introducció-iterativa"><i class="fa fa-check"></i><b>8.3</b> Exemple: calcularNota amb introducció iterativa</a></li>
+<li class="chapter" data-level="8.4" data-path="pac08.html"><a href="pac08.html#exemple-recorregut-vs-cerca"><i class="fa fa-check"></i><b>8.4</b> Exemple: recorregut vs cerca</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple-llistacartes"><i class="fa fa-check"></i><b>9.1</b> Exemple: llistaCartes</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>10</b> PAC10</a></li>
+<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>11.1</b> Mode menu vs mode test</a></li>
+<li class="chapter" data-level="11.2" data-path="pr1.html"><a href="pr1.html#exemple-tupla-dins-de-tupla"><i class="fa fa-check"></i><b>11.2</b> Exemple: tupla dins de tupla</a></li>
+<li class="chapter" data-level="11.3" data-path="pr1.html"><a href="pr1.html#desplaçament-delements-en-un-vector"><i class="fa fa-check"></i><b>11.3</b> Desplaçament d’elements en un vector</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="pr1.html"><a href="pr1.html#afegir-un-element"><i class="fa fa-check"></i><b>11.3.1</b> Afegir un element</a></li>
+<li class="chapter" data-level="11.3.2" data-path="pr1.html"><a href="pr1.html#esborrar-un-element"><i class="fa fa-check"></i><b>11.3.2</b> Esborrar un element</a></li>
+<li class="chapter" data-level="11.3.3" data-path="pr1.html"><a href="pr1.html#exemple-diessetmana"><i class="fa fa-check"></i><b>11.3.3</b> Exemple: diesSetmana</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-pilacartes"><i class="fa fa-check"></i><b>12.1</b> Exemple: pilaCartes</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>13</b> VMWare i CodeLite</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-què-una-màquina-virtual"><i class="fa fa-check"></i><b>13.1</b> Per què una màquina virtual?</a></li>
+<li class="chapter" data-level="13.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#virtualbox-i-requeriments-de-virtualització"><i class="fa fa-check"></i><b>13.2</b> VirtualBox i requeriments de virtualització</a></li>
+<li class="chapter" data-level="13.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>13.3</b> Com instal·lar les Guest Additions</a></li>
+<li class="chapter" data-level="13.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>13.4</b> Primers passos amb CodeLite</a></li>
+<li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
+<li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
+<li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
+<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bibliografia"><i class="fa fa-check"></i><b>14.1</b> Bibliografia</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.uoc.edu" target="blank">www.uoc.edu</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">FAQ Laboratori de Fonaments de Programació</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="altres" class="section level1" number="14">
+<h1 number="14"><span class="header-section-number">14</span> Altres</h1>
+<div id="bibliografia" class="section level2" number="14.1">
+<h2 number="14.1"><span class="header-section-number">14.1</span> Bibliografia</h2>
+<p>Recursos gratuïts:</p>
+<ul>
+<li><em>C Notes for Professionals book</em>: <a href="https://books.goalkicker.com/CBook/" class="uri">https://books.goalkicker.com/CBook/</a></li>
+<li><em>C Programming</em>: <a href="https://en.wikibooks.org/wiki/C_Programming" class="uri">https://en.wikibooks.org/wiki/C_Programming</a></li>
+<li><em>C Programming Boot Camp</em>: <a href="https://www.gribblelab.org/CBootCamp/" class="uri">https://www.gribblelab.org/CBootCamp/</a></li>
+<li><em>The C Book</em>: <a href="https://publications.gbdirect.co.uk//c_book/" class="uri">https://publications.gbdirect.co.uk//c_book/</a></li>
+<li><em>Programming in C</em>: <a href="http://ee.hawaii.edu/~tep/EE160/Book/PDF/Book.html" class="uri">http://ee.hawaii.edu/~tep/EE160/Book/PDF/Book.html</a></li>
+<li><em>The ANSI C Programming Language</em>: <a href="https://www.dipmat.univpm.it/~demeio/public/the_c_programming_language_2.pdf" class="uri">https://www.dipmat.univpm.it/~demeio/public/the_c_programming_language_2.pdf</a></li>
+</ul>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>PAC: Prova d’Avaluació Continua<a href="pac02.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>PR: Pràctica<a href="pac02.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>PS: Prova de Síntesi<a href="pac02.html#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="vmware-i-codelite.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/14-Altres.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["FAQ_Laboratori_FP.pdf", "FAQ_Laboratori_FP.epub"],
+"toc": {
+"collapse": "section",
+"toc": true,
+"toc_float": true,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

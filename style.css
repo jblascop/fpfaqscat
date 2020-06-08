@@ -1,0 +1,26 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+div.algorisme {
+  overflow: auto;
+  white-space: pre;
+      display: block;
+    word-wrap: break-word;
+  font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  font-size: 14px;
+  padding: .85em 1em;
+  background-color: #f7f7f7;
+  background-color:#e6f0ff;
+}

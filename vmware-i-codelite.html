@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>13 VMWare i CodeLite | FAQ Laboratori de Fonaments de Programació</title>
+  <meta name="description" content="FAQ del Laboratori de Fonaments de Programació" />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="13 VMWare i CodeLite | FAQ Laboratori de Fonaments de Programació" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="FAQ del Laboratori de Fonaments de Programació" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="13 VMWare i CodeLite | FAQ Laboratori de Fonaments de Programació" />
+  
+  <meta name="twitter:description" content="FAQ del Laboratori de Fonaments de Programació" />
+  
+
+<meta name="author" content="Jordi Blasco Planesas" />
+
+
+<meta name="date" content="2020-06-08" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="pr2.html"/>
+<link rel="next" href="altres.html"/>
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168787497-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168787497-1');
+</script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"><img src="./img/uoc.png" width="100"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introducció</a></li>
+<li class="chapter" data-level="1" data-path="pac01.html"><a href="pac01.html"><i class="fa fa-check"></i><b>1</b> PAC01</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="pac01.html"><a href="pac01.html#llenguatge-algorísmic"><i class="fa fa-check"></i><b>1.1</b> Llenguatge algorísmic</a></li>
+<li class="chapter" data-level="1.2" data-path="pac01.html"><a href="pac01.html#llenguatge-algorísmic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.2</b> Llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="1.3" data-path="pac01.html"><a href="pac01.html#equivalències-llenguatge-algorísmic-vs-llenguatge-c"><i class="fa fa-check"></i><b>1.3</b> Equivalències llenguatge algorísmic vs llenguatge C</a></li>
+<li class="chapter" data-level="1.4" data-path="pac01.html"><a href="pac01.html#impressió-de-valors-incorrecta"><i class="fa fa-check"></i><b>1.4</b> Impressió de valors incorrecta</a></li>
+<li class="chapter" data-level="1.5" data-path="pac01.html"><a href="pac01.html#com-definir-un-enumeratiu"><i class="fa fa-check"></i><b>1.5</b> Com definir un enumeratiu</a></li>
+<li class="chapter" data-level="1.6" data-path="pac01.html"><a href="pac01.html#com-utilitzar-un-enumeratiu"><i class="fa fa-check"></i><b>1.6</b> Com utilitzar un enumeratiu</a></li>
+<li class="chapter" data-level="1.7" data-path="pac01.html"><a href="pac01.html#especificador-dun-enumeratiu"><i class="fa fa-check"></i><b>1.7</b> Especificador d’un enumeratiu</a></li>
+<li class="chapter" data-level="1.8" data-path="pac01.html"><a href="pac01.html#lectura-de-caràcters-en-c"><i class="fa fa-check"></i><b>1.8</b> Lectura de caràcters en C</a></li>
+<li class="chapter" data-level="1.9" data-path="pac01.html"><a href="pac01.html#lectura-de-float-en-c"><i class="fa fa-check"></i><b>1.9</b> Lectura de float en C</a></li>
+<li class="chapter" data-level="1.10" data-path="pac01.html"><a href="pac01.html#frequently-made-mistakes"><i class="fa fa-check"></i><b>1.10</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="1.10.1" data-path="pac01.html"><a href="pac01.html#definició-de-tipus-tipus-booleà"><i class="fa fa-check"></i><b>1.10.1</b> Definició de tipus: tipus booleà</a></li>
+<li class="chapter" data-level="1.10.2" data-path="pac01.html"><a href="pac01.html#estil-i-format-absència-destil-i-format-en-llenguatge-algorísmic"><i class="fa fa-check"></i><b>1.10.2</b> Estil i format: absència d’estil i format en llenguatge algorísmic</a></li>
+<li class="chapter" data-level="1.10.3" data-path="pac01.html"><a href="pac01.html#declaració-de-variables-identificadors-no-permesos"><i class="fa fa-check"></i><b>1.10.3</b> Declaració de variables: identificadors no permesos</a></li>
+<li class="chapter" data-level="1.10.4" data-path="pac01.html"><a href="pac01.html#declaració-de-variables-operador-de-declaració"><i class="fa fa-check"></i><b>1.10.4</b> Declaració de variables: operador de declaració</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="pac02.html"><a href="pac02.html"><i class="fa fa-check"></i><b>2</b> PAC02</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="pac02.html"><a href="pac02.html#booleans-en-c"><i class="fa fa-check"></i><b>2.1</b> Booleans en C</a></li>
+<li class="chapter" data-level="2.2" data-path="pac02.html"><a href="pac02.html#booleans-definits-com-a-enumeratius"><i class="fa fa-check"></i><b>2.2</b> Booleans definits com a enumeratius</a></li>
+<li class="chapter" data-level="2.3" data-path="pac02.html"><a href="pac02.html#constants-define-vs-const"><i class="fa fa-check"></i><b>2.3</b> Constants: define vs const</a></li>
+<li class="chapter" data-level="2.4" data-path="pac02.html"><a href="pac02.html#com-mostrar-el-valor-duna-constant"><i class="fa fa-check"></i><b>2.4</b> Com mostrar el valor d’una constant</a></li>
+<li class="chapter" data-level="2.5" data-path="pac02.html"><a href="pac02.html#precisió-en-variables-float"><i class="fa fa-check"></i><b>2.5</b> Precisió en variables float</a></li>
+<li class="chapter" data-level="2.6" data-path="pac02.html"><a href="pac02.html#semàntica-duna-expressió"><i class="fa fa-check"></i><b>2.6</b> Semàntica d’una expressió</a></li>
+<li class="chapter" data-level="2.7" data-path="pac02.html"><a href="pac02.html#exemples-dexpressions"><i class="fa fa-check"></i><b>2.7</b> Exemples d’expressions</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="pac02.html"><a href="pac02.html#exemple-1-esparell"><i class="fa fa-check"></i><b>2.7.1</b> Exemple 1: esParell</a></li>
+<li class="chapter" data-level="2.7.2" data-path="pac02.html"><a href="pac02.html#exemple-2-capdesetmana"><i class="fa fa-check"></i><b>2.7.2</b> Exemple 2: capDeSetmana</a></li>
+<li class="chapter" data-level="2.7.3" data-path="pac02.html"><a href="pac02.html#exemple-3-esvocal"><i class="fa fa-check"></i><b>2.7.3</b> Exemple 3: esVocal</a></li>
+<li class="chapter" data-level="2.7.4" data-path="pac02.html"><a href="pac02.html#exemple-4-votacions"><i class="fa fa-check"></i><b>2.7.4</b> Exemple 4: votacions</a></li>
+<li class="chapter" data-level="2.7.5" data-path="pac02.html"><a href="pac02.html#exemple-5-gintonicpreparation"><i class="fa fa-check"></i><b>2.7.5</b> Exemple 5: ginTonicPreparation</a></li>
+<li class="chapter" data-level="2.7.6" data-path="pac02.html"><a href="pac02.html#exemple-6-gintonicfreeml"><i class="fa fa-check"></i><b>2.7.6</b> Exemple 6: ginTonicFreeMl</a></li>
+<li class="chapter" data-level="2.7.7" data-path="pac02.html"><a href="pac02.html#exemple-7-scoutingbasquet"><i class="fa fa-check"></i><b>2.7.7</b> Exemple 7: scoutingBasquet</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="pac02.html"><a href="pac02.html#frequently-made-mistakes-1"><i class="fa fa-check"></i><b>2.8</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="2.8.1" data-path="pac02.html"><a href="pac02.html#interfície-dusuari-absència-de-textos-informatius"><i class="fa fa-check"></i><b>2.8.1</b> Interfície d’usuari: absència de textos informatius</a></li>
+<li class="chapter" data-level="2.8.2" data-path="pac02.html"><a href="pac02.html#caràcters-ús-de-cometes-simples"><i class="fa fa-check"></i><b>2.8.2</b> Caràcters: ús de cometes simples</a></li>
+<li class="chapter" data-level="2.8.3" data-path="pac02.html"><a href="pac02.html#sintaxi-pròpia-de-c-funcions-de-lecturaescriptura"><i class="fa fa-check"></i><b>2.8.3</b> Sintaxi pròpia de C: funcions de lectura/escriptura</a></li>
+<li class="chapter" data-level="2.8.4" data-path="pac02.html"><a href="pac02.html#conversió-de-tipus-funcions-inexistents"><i class="fa fa-check"></i><b>2.8.4</b> Conversió de tipus: funcions inexistents</a></li>
+<li class="chapter" data-level="2.8.5" data-path="pac02.html"><a href="pac02.html#expressions-variables-intermitges"><i class="fa fa-check"></i><b>2.8.5</b> Expressions: variables intermitges</a></li>
+<li class="chapter" data-level="2.8.6" data-path="pac02.html"><a href="pac02.html#declaració-de-variables-declaració-mal-ubicada-bloc-central-de-codi"><i class="fa fa-check"></i><b>2.8.6</b> Declaració de variables: declaració mal ubicada (bloc central de codi)</a></li>
+<li class="chapter" data-level="2.8.7" data-path="pac02.html"><a href="pac02.html#declaració-de-variables-declaració-mal-ubicada-variables-globals"><i class="fa fa-check"></i><b>2.8.7</b> Declaració de variables: declaració mal ubicada (variables globals)</a></li>
+<li class="chapter" data-level="2.8.8" data-path="pac02.html"><a href="pac02.html#tipus-booleà-valors-numèrics"><i class="fa fa-check"></i><b>2.8.8</b> Tipus booleà: valors numèrics</a></li>
+<li class="chapter" data-level="2.8.9" data-path="pac02.html"><a href="pac02.html#tipus-booleà-cadenes-de-caràcters"><i class="fa fa-check"></i><b>2.8.9</b> Tipus booleà: cadenes de caràcters</a></li>
+<li class="chapter" data-level="2.8.10" data-path="pac02.html"><a href="pac02.html#sintaxi-pròpia-de-c-operadors"><i class="fa fa-check"></i><b>2.8.10</b> Sintaxi pròpia de C: operadors</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="pac03.html"><a href="pac03.html"><i class="fa fa-check"></i><b>3</b> PAC03</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="pac03.html"><a href="pac03.html#com-declarar-un-vector-en-llenguatge-algorísmic"><i class="fa fa-check"></i><b>3.1</b> Com declarar un vector en llenguatge algorísmic</a></li>
+<li class="chapter" data-level="3.2" data-path="pac03.html"><a href="pac03.html#significat-dels-arguments-del-main"><i class="fa fa-check"></i><b>3.2</b> Significat dels arguments del main</a></li>
+<li class="chapter" data-level="3.3" data-path="pac03.html"><a href="pac03.html#assignar-valors-a-un-vector"><i class="fa fa-check"></i><b>3.3</b> Assignar valors a un vector</a></li>
+<li class="chapter" data-level="3.4" data-path="pac03.html"><a href="pac03.html#stack-smashing-detected"><i class="fa fa-check"></i><b>3.4</b> Stack smashing detected</a></li>
+<li class="chapter" data-level="3.5" data-path="pac03.html"><a href="pac03.html#concatenació-en-llenguatge-algorísmic"><i class="fa fa-check"></i><b>3.5</b> Concatenació en llenguatge algorísmic</a></li>
+<li class="chapter" data-level="3.6" data-path="pac03.html"><a href="pac03.html#importància-dels-tipus-utilitzats-en-llenguatge-c"><i class="fa fa-check"></i><b>3.6</b> Importància dels tipus utilitzats en llenguatge C</a></li>
+<li class="chapter" data-level="3.7" data-path="pac03.html"><a href="pac03.html#exemple-notafinal"><i class="fa fa-check"></i><b>3.7</b> Exemple: notaFinal</a></li>
+<li class="chapter" data-level="3.8" data-path="pac03.html"><a href="pac03.html#frequently-made-mistakes-2"><i class="fa fa-check"></i><b>3.8</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="pac03.html"><a href="pac03.html#strings-declaració-com-a-vectors-de-caràcters-en-llenguatge-algorísmic"><i class="fa fa-check"></i><b>3.8.1</b> Strings: declaració com a vectors de caràcters en llenguatge algorísmic</a></li>
+<li class="chapter" data-level="3.8.2" data-path="pac03.html"><a href="pac03.html#sintaxi-pròpia-de-c-funcions-complexes"><i class="fa fa-check"></i><b>3.8.2</b> Sintaxi pròpia de C: funcions complexes</a></li>
+<li class="chapter" data-level="3.8.3" data-path="pac03.html"><a href="pac03.html#estructura-alternativa-ifs-consecutius"><i class="fa fa-check"></i><b>3.8.3</b> Estructura alternativa: if’s consecutius</a></li>
+<li class="chapter" data-level="3.8.4" data-path="pac03.html"><a href="pac03.html#estructura-alternativa-ifs-buits"><i class="fa fa-check"></i><b>3.8.4</b> Estructura alternativa: if’s buits</a></li>
+<li class="chapter" data-level="3.8.5" data-path="pac03.html"><a href="pac03.html#estructura-alternativa-interrompre-un-algorisme-i"><i class="fa fa-check"></i><b>3.8.5</b> Estructura alternativa: interrompre un algorisme (I)</a></li>
+<li class="chapter" data-level="3.8.6" data-path="pac03.html"><a href="pac03.html#estructura-alternativa-interrompre-un-algorisme-ii"><i class="fa fa-check"></i><b>3.8.6</b> Estructura alternativa: interrompre un algorisme (II)</a></li>
+<li class="chapter" data-level="3.8.7" data-path="pac03.html"><a href="pac03.html#constants-i-nombres-valors-numèrics-al-codi-hardcode"><i class="fa fa-check"></i><b>3.8.7</b> Constants i nombres: Valors numèrics al codi (hardcode)</a></li>
+<li class="chapter" data-level="3.8.8" data-path="pac03.html"><a href="pac03.html#constants-declaració-de-constants-mal-ubicada"><i class="fa fa-check"></i><b>3.8.8</b> Constants: declaració de constants mal ubicada</a></li>
+<li class="chapter" data-level="3.8.9" data-path="pac03.html"><a href="pac03.html#strings-comparació-directa"><i class="fa fa-check"></i><b>3.8.9</b> Strings: comparació directa</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="pac04.html"><a href="pac04.html"><i class="fa fa-check"></i><b>4</b> PAC04</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="pac04.html"><a href="pac04.html#com-tractar-elements-dun-vector-amb-un-bucle"><i class="fa fa-check"></i><b>4.1</b> Com tractar elements d’un vector amb un bucle</a></li>
+<li class="chapter" data-level="4.2" data-path="pac04.html"><a href="pac04.html#entrada-contínua-de-valors-amb-un-bucle"><i class="fa fa-check"></i><b>4.2</b> Entrada contínua de valors amb un bucle</a></li>
+<li class="chapter" data-level="4.3" data-path="pac04.html"><a href="pac04.html#com-tractar-valors-en-múltiples-vectors"><i class="fa fa-check"></i><b>4.3</b> Com tractar valors en múltiples vectors</a></li>
+<li class="chapter" data-level="4.4" data-path="pac04.html"><a href="pac04.html#definició-chars-vs-strings"><i class="fa fa-check"></i><b>4.4</b> Definició chars vs strings</a></li>
+<li class="chapter" data-level="4.5" data-path="pac04.html"><a href="pac04.html#exemple-mitjanapes"><i class="fa fa-check"></i><b>4.5</b> Exemple: mitjanaPes</a></li>
+<li class="chapter" data-level="4.6" data-path="pac04.html"><a href="pac04.html#frequently-made-mistakes-3"><i class="fa fa-check"></i><b>4.6</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="pac04.html"><a href="pac04.html#estructura-iterativa-for-vs-while"><i class="fa fa-check"></i><b>4.6.1</b> Estructura iterativa: for vs while</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="pac05.html"><a href="pac05.html"><i class="fa fa-check"></i><b>5</b> PAC05</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="pac05.html"><a href="pac05.html#strcmp"><i class="fa fa-check"></i><b>5.1</b> strcmp()</a></li>
+<li class="chapter" data-level="5.2" data-path="pac05.html"><a href="pac05.html#scanf"><i class="fa fa-check"></i><b>5.2</b> scanf()</a></li>
+<li class="chapter" data-level="5.3" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strcmp"><i class="fa fa-check"></i><b>5.3</b> El finalitzador ‘\0’ i strcmp()</a></li>
+<li class="chapter" data-level="5.4" data-path="pac05.html"><a href="pac05.html#el-finalitzador-0-i-strlen"><i class="fa fa-check"></i><b>5.4</b> El finalitzador ‘\0’ i strlen()</a></li>
+<li class="chapter" data-level="5.5" data-path="pac05.html"><a href="pac05.html#exemple-comparaciostrings"><i class="fa fa-check"></i><b>5.5</b> Exemple: comparacioStrings</a></li>
+<li class="chapter" data-level="5.6" data-path="pac05.html"><a href="pac05.html#exemple-nòmines"><i class="fa fa-check"></i><b>5.6</b> Exemple: nòmines</a></li>
+<li class="chapter" data-level="5.7" data-path="pac05.html"><a href="pac05.html#exemple-brisca"><i class="fa fa-check"></i><b>5.7</b> Exemple: brisca</a></li>
+<li class="chapter" data-level="5.8" data-path="pac05.html"><a href="pac05.html#frequently-made-mistakes-4"><i class="fa fa-check"></i><b>5.8</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="5.8.1" data-path="pac05.html"><a href="pac05.html#definició-de-tipus-definició-de-tuples-mal-ubicada"><i class="fa fa-check"></i><b>5.8.1</b> Definició de tipus: definició de tuples mal ubicada</a></li>
+<li class="chapter" data-level="5.8.2" data-path="pac05.html"><a href="pac05.html#definició-de-tipus-definició-mal-ubicada"><i class="fa fa-check"></i><b>5.8.2</b> Definició de tipus: definició mal ubicada</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pac06.html"><a href="pac06.html"><i class="fa fa-check"></i><b>6</b> PAC06</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pac06.html"><a href="pac06.html#diferències-entre-funcions-i-accions"><i class="fa fa-check"></i><b>6.1</b> Diferències entre funcions i accions</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="pac06.html"><a href="pac06.html#paràmetres-dentrada-in"><i class="fa fa-check"></i><b>6.1.1</b> Paràmetres d’entrada (in)</a></li>
+<li class="chapter" data-level="6.1.2" data-path="pac06.html"><a href="pac06.html#paràmetres-de-sortida-out"><i class="fa fa-check"></i><b>6.1.2</b> Paràmetres de sortida (out)</a></li>
+<li class="chapter" data-level="6.1.3" data-path="pac06.html"><a href="pac06.html#paràmetres-dentradasortida-inout"><i class="fa fa-check"></i><b>6.1.3</b> Paràmetres d’entrada/sortida (inout)</a></li>
+<li class="chapter" data-level="6.1.4" data-path="pac06.html"><a href="pac06.html#tuples-com-a-paràmetres"><i class="fa fa-check"></i><b>6.1.4</b> Tuples com a paràmetres</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="pac06.html"><a href="pac06.html#exemple-ús-daccions"><i class="fa fa-check"></i><b>6.2</b> Exemple: ús d’accions</a></li>
+<li class="chapter" data-level="6.3" data-path="pac06.html"><a href="pac06.html#exemple-ús-de-funcions"><i class="fa fa-check"></i><b>6.3</b> Exemple: ús de funcions</a></li>
+<li class="chapter" data-level="6.4" data-path="pac06.html"><a href="pac06.html#exemple-nòmines-1"><i class="fa fa-check"></i><b>6.4</b> Exemple: nòmines</a></li>
+<li class="chapter" data-level="6.5" data-path="pac06.html"><a href="pac06.html#exemple-pivotdefensiu"><i class="fa fa-check"></i><b>6.5</b> Exemple: pivotDefensiu</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="pac06.html"><a href="pac06.html#explicació-sobre-lacció-copiarjugadora"><i class="fa fa-check"></i><b>6.5.1</b> Explicació sobre l’acció copiarJugadora()</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="pac06.html"><a href="pac06.html#frequently-made-mistakes-5"><i class="fa fa-check"></i><b>6.6</b> Frequently Made Mistakes</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="pac06.html"><a href="pac06.html#definició-daccionsfuncions-noms-de-paràmetres"><i class="fa fa-check"></i><b>6.6.1</b> Definició d’accions/funcions: noms de paràmetres</a></li>
+<li class="chapter" data-level="6.6.2" data-path="pac06.html"><a href="pac06.html#definició-daccionsfuncions-tipus-de-paràmetres"><i class="fa fa-check"></i><b>6.6.2</b> Definició d’accions/funcions: tipus de paràmetres</a></li>
+<li class="chapter" data-level="6.6.3" data-path="pac06.html"><a href="pac06.html#definició-de-funcions-tipus-de-dades-de-retorn"><i class="fa fa-check"></i><b>6.6.3</b> Definició de funcions: tipus de dades de retorn</a></li>
+<li class="chapter" data-level="6.6.4" data-path="pac06.html"><a href="pac06.html#definició-daccions-retorn-de-valor"><i class="fa fa-check"></i><b>6.6.4</b> Definició d’accions: retorn de valor</a></li>
+<li class="chapter" data-level="6.6.5" data-path="pac06.html"><a href="pac06.html#definició-daccionsfuncions-accions-obertes"><i class="fa fa-check"></i><b>6.6.5</b> Definició d’accions/funcions: accions obertes</a></li>
+<li class="chapter" data-level="6.6.6" data-path="pac06.html"><a href="pac06.html#crida-a-funcionsaccions-tipus-de-paràmetres"><i class="fa fa-check"></i><b>6.6.6</b> Crida a funcions/accions: tipus de paràmetres</a></li>
+<li class="chapter" data-level="6.6.7" data-path="pac06.html"><a href="pac06.html#crida-a-accionsfuncions-paraules-reservades"><i class="fa fa-check"></i><b>6.6.7</b> Crida a accions/funcions: paraules reservades</a></li>
+<li class="chapter" data-level="6.6.8" data-path="pac06.html"><a href="pac06.html#crida-a-funcions-crida-buida"><i class="fa fa-check"></i><b>6.6.8</b> Crida a funcions: crida buida</a></li>
+<li class="chapter" data-level="6.6.9" data-path="pac06.html"><a href="pac06.html#crida-a-funcions-absència-de-paràmetres"><i class="fa fa-check"></i><b>6.6.9</b> Crida a funcions: absència de paràmetres</a></li>
+<li class="chapter" data-level="6.6.10" data-path="pac06.html"><a href="pac06.html#crida-a-funcions-errors-de-sintaxi-múltiples"><i class="fa fa-check"></i><b>6.6.10</b> Crida a funcions: errors de sintaxi múltiples</a></li>
+<li class="chapter" data-level="6.6.11" data-path="pac06.html"><a href="pac06.html#definició-de-funcions-funcions-dins-el-main"><i class="fa fa-check"></i><b>6.6.11</b> Definició de funcions: funcions dins el main</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="pac07.html"><a href="pac07.html"><i class="fa fa-check"></i><b>7</b> PAC07</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="pac07.html"><a href="pac07.html#quan-utilitzar-dins-de-funcionsaccions"><i class="fa fa-check"></i><b>7.1</b> Quan utilitzar &amp; dins de funcions/accions</a></li>
+<li class="chapter" data-level="7.2" data-path="pac07.html"><a href="pac07.html#exemple-com-modular-un-programa-amb-codelite"><i class="fa fa-check"></i><b>7.2</b> Exemple: com modular un programa amb CodeLite</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="pac07.html"><a href="pac07.html#funcionament-per-defecte-dun-projecte-a-codelite"><i class="fa fa-check"></i><b>7.2.1</b> Funcionament per defecte d’un projecte a CodeLite:</a></li>
+<li class="chapter" data-level="7.2.2" data-path="pac07.html"><a href="pac07.html#executable-dins-de-bin."><i class="fa fa-check"></i><b>7.2.2</b> Executable dins de /bin.</a></li>
+<li class="chapter" data-level="7.2.3" data-path="pac07.html"><a href="pac07.html#modularització-del-programa-en-un-arxiu-de-capçaleres-i-un-de-funcions."><i class="fa fa-check"></i><b>7.2.3</b> Modularització del programa en un arxiu de capçaleres i un de funcions.</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="pac07.html"><a href="pac07.html#tipus-de-paràmetres-en-accions-i-funcions"><i class="fa fa-check"></i><b>7.3</b> Tipus de paràmetres en accions i funcions</a></li>
+<li class="chapter" data-level="7.4" data-path="pac07.html"><a href="pac07.html#scanf-acció-o-funció"><i class="fa fa-check"></i><b>7.4</b> scanf(): acció o funció?</a></li>
+<li class="chapter" data-level="7.5" data-path="pac07.html"><a href="pac07.html#pas-per-valor-vs-pas-per-referència"><i class="fa fa-check"></i><b>7.5</b> Pas per valor vs pas per referència</a></li>
+<li class="chapter" data-level="7.6" data-path="pac07.html"><a href="pac07.html#exemple-capgirarparaula"><i class="fa fa-check"></i><b>7.6</b> Exemple: capgirarParaula</a></li>
+<li class="chapter" data-level="7.7" data-path="pac07.html"><a href="pac07.html#exemple-isparell"><i class="fa fa-check"></i><b>7.7</b> Exemple: isParell</a></li>
+<li class="chapter" data-level="7.8" data-path="pac07.html"><a href="pac07.html#exemple-pivotdefensiutirslliures"><i class="fa fa-check"></i><b>7.8</b> Exemple: pivotDefensiuTirsLliures</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="pac08.html"><a href="pac08.html"><i class="fa fa-check"></i><b>8</b> PAC08</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="pac08.html"><a href="pac08.html#com-inicialitzar-una-taula"><i class="fa fa-check"></i><b>8.1</b> Com inicialitzar una taula</a></li>
+<li class="chapter" data-level="8.2" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota"><i class="fa fa-check"></i><b>8.2</b> Exemple: calcularNota</a></li>
+<li class="chapter" data-level="8.3" data-path="pac08.html"><a href="pac08.html#exemple-calcularnota-amb-introducció-iterativa"><i class="fa fa-check"></i><b>8.3</b> Exemple: calcularNota amb introducció iterativa</a></li>
+<li class="chapter" data-level="8.4" data-path="pac08.html"><a href="pac08.html#exemple-recorregut-vs-cerca"><i class="fa fa-check"></i><b>8.4</b> Exemple: recorregut vs cerca</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="pac09.html"><a href="pac09.html"><i class="fa fa-check"></i><b>9</b> PAC09</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="pac09.html"><a href="pac09.html#exemple-llistacartes"><i class="fa fa-check"></i><b>9.1</b> Exemple: llistaCartes</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="pac10.html"><a href="pac10.html"><i class="fa fa-check"></i><b>10</b> PAC10</a></li>
+<li class="chapter" data-level="11" data-path="pr1.html"><a href="pr1.html"><i class="fa fa-check"></i><b>11</b> PR1</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="pr1.html"><a href="pr1.html#mode-menu-vs-mode-test"><i class="fa fa-check"></i><b>11.1</b> Mode menu vs mode test</a></li>
+<li class="chapter" data-level="11.2" data-path="pr1.html"><a href="pr1.html#exemple-tupla-dins-de-tupla"><i class="fa fa-check"></i><b>11.2</b> Exemple: tupla dins de tupla</a></li>
+<li class="chapter" data-level="11.3" data-path="pr1.html"><a href="pr1.html#desplaçament-delements-en-un-vector"><i class="fa fa-check"></i><b>11.3</b> Desplaçament d’elements en un vector</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="pr1.html"><a href="pr1.html#afegir-un-element"><i class="fa fa-check"></i><b>11.3.1</b> Afegir un element</a></li>
+<li class="chapter" data-level="11.3.2" data-path="pr1.html"><a href="pr1.html#esborrar-un-element"><i class="fa fa-check"></i><b>11.3.2</b> Esborrar un element</a></li>
+<li class="chapter" data-level="11.3.3" data-path="pr1.html"><a href="pr1.html#exemple-diessetmana"><i class="fa fa-check"></i><b>11.3.3</b> Exemple: diesSetmana</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="pr2.html"><a href="pr2.html"><i class="fa fa-check"></i><b>12</b> PR2</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="pr2.html"><a href="pr2.html#exemple-pilacartes"><i class="fa fa-check"></i><b>12.1</b> Exemple: pilaCartes</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html"><i class="fa fa-check"></i><b>13</b> VMWare i CodeLite</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#per-què-una-màquina-virtual"><i class="fa fa-check"></i><b>13.1</b> Per què una màquina virtual?</a></li>
+<li class="chapter" data-level="13.2" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#virtualbox-i-requeriments-de-virtualització"><i class="fa fa-check"></i><b>13.2</b> VirtualBox i requeriments de virtualització</a></li>
+<li class="chapter" data-level="13.3" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-installar-les-guest-additions"><i class="fa fa-check"></i><b>13.3</b> Com instal·lar les Guest Additions</a></li>
+<li class="chapter" data-level="13.4" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#primers-passos-amb-codelite"><i class="fa fa-check"></i><b>13.4</b> Primers passos amb CodeLite</a></li>
+<li class="chapter" data-level="13.5" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-activar-un-projecte"><i class="fa fa-check"></i><b>13.5</b> Com activar un projecte</a></li>
+<li class="chapter" data-level="13.6" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#canviar-idioma-del-teclat"><i class="fa fa-check"></i><b>13.6</b> Canviar idioma del teclat</a></li>
+<li class="chapter" data-level="13.7" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#programa-per-defecte-al-crear-un-projecte"><i class="fa fa-check"></i><b>13.7</b> Programa per defecte al crear un projecte</a></li>
+<li class="chapter" data-level="13.8" data-path="vmware-i-codelite.html"><a href="vmware-i-codelite.html#com-fixar-el-kernel-dinici-amb-lubuntu"><i class="fa fa-check"></i><b>13.8</b> Com fixar el kernel d’inici amb Lubuntu</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="altres.html"><a href="altres.html"><i class="fa fa-check"></i><b>14</b> Altres</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="altres.html"><a href="altres.html#bibliografia"><i class="fa fa-check"></i><b>14.1</b> Bibliografia</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://www.uoc.edu" target="blank">www.uoc.edu</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">FAQ Laboratori de Fonaments de Programació</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="vmware-i-codelite" class="section level1" number="13">
+<h1 number="13"><span class="header-section-number">13</span> VMWare i CodeLite</h1>
+<div id="per-què-una-màquina-virtual" class="section level2" number="13.1">
+<h2 number="13.1"><span class="header-section-number">13.1</span> Per què una màquina virtual?</h2>
+<p>La màquina virtual s’utilitza per tenir un entorn homogeni de programació, tant per part dels estudiants com per part dels consultors, de forma que qualsevol enunciat/solució publicat a les aules de teoria funcioni a tots els estudiants, i que tots els programes que realitzeu es comportin igual als entorns que s’utilitzaran per corregir-los.</p>
+<p>Fa uns semestres ens vam trobar amb uns pocs casos en els quals un programa que funcionava correctament al PC d’un estudiant, fallava a l’hora de ser corregit. I també alguns enunciats que en determinats sistemes operatius / versions de compiladors C, tampoc funcionaven correctament. Per aquest motiu es va decidir utilitzar una màquina virtual.</p>
+<p>Nosaltres no tenim forma de controlar que realment utilitzeu la FP20181 o bé un CodeLite instal·lat directament al vostre PC, però si no és així es pot donar alguna situació poc desitjable com les que he comentat.</p>
+</div>
+<div id="virtualbox-i-requeriments-de-virtualització" class="section level2" number="13.2">
+<h2 number="13.2"><span class="header-section-number">13.2</span> VirtualBox i requeriments de virtualització</h2>
+<p>Per poder utilitzar VirtualBox és necessari que disposi d’accés a l’opció de virtualització. Si no és així, es poden obtenir errors del tipus: <strong>VT-X está deshabilitado en el BIOS para todos los CPUs</strong>.</p>
+<p>L’error es pot produir per vàries raons:</p>
+<ul>
+<li>La BIOS del PC té deshabilitada l’opció. Per solucionar-ho, cal entrar dins de la BIOS del PC i trobar l’opció d’activació de la virtualització (varia segons el fabricant): pot ser <strong>VT-x</strong>, <strong>Virtualization Technology</strong>, <strong>VT-x/AMD-V</strong>, <strong>Intel Virtual Technology</strong>, <strong>Tecnología de virtualización (VTx/VTd)</strong>, etc.</li>
+<li>Tenim actiu un antivirus el qual té activada una virtualització pròpia que entra en conflicte amb la requerida per VirtualBox. En aquest cas, únicament cal desactivar l’opció de virtualització de l’antivirus.</li>
+</ul>
+</div>
+<div id="com-installar-les-guest-additions" class="section level2" number="13.3">
+<h2 number="13.3"><span class="header-section-number">13.3</span> Com instal·lar les Guest Additions</h2>
+<p>Les <strong>Guest Additions</strong> són una sèrie de drivers que milloren la interacció entre host i màquina virtual. Per instal·lar-les únicament cal fer:</p>
+<ol style="list-style-type: decimal">
+<li>Engegar la màquina virtual <strong>FP20181</strong></li>
+<li>Anar a la barra de menú superior -&gt; <strong>VirtualBox</strong> -&gt; <strong>Devices</strong> -&gt; <strong>Insert Guest Additions CD Image…</strong> -&gt; instal·larà una unitat de CD amb les <strong>Guest Additions</strong>.</li>
+<li>Obrir un terminal des de <strong>Lubuntu</strong> -&gt; <strong>System Tools</strong> -&gt; <strong>LXTerminal</strong></li>
+<li>Dins del terminal <strong>LXTerminal</strong> executar el següent (la versió que s’estigui instal·lant pot ser més nova que la 6.0.12):</li>
+</ol>
+<pre><code>cd /media/uoc/VBox_GAs_6.0.12/     
+sudo sh ./VBoxLinuxAdditions.run</code></pre>
+<ol style="list-style-type: decimal">
+<li>Reiniciar la <strong>FP20181</strong> per activar les <strong>Guest Additions</strong>.</li>
+</ol>
+</div>
+<div id="primers-passos-amb-codelite" class="section level2" number="13.4">
+<h2 number="13.4"><span class="header-section-number">13.4</span> Primers passos amb CodeLite</h2>
+<p>A les xWiki trobareu el mòdul <strong>Introducció a l’entorn de programació CodeLite</strong>, en el qual es detallen els passos a realitzar per preparar l’entorn.</p>
+<p>A continuació es resumeixen una sèrie d’aspectes que es comenten a la xWiki i que són importants recordar:</p>
+<ul>
+<li>Un <strong>workspace</strong> de CodeLite és una agrupació de projectes.</li>
+<li>Únicament es pot tenir un <strong>workspace</strong> obert dins de CodeLite.</li>
+<li>Per crear un <strong>workspace</strong>: <strong>CodeLite</strong> -&gt; <strong>Workspace</strong> -&gt; <strong>New Workspace…</strong> -&gt; <strong>Workspace type:</strong> <code>C++</code> -&gt; <strong>Workspace name</strong>: el que correspongui; <strong>Workspace Path</strong>: <code>/home/uoc/Documents/codelite/workspaces/</code> (o qualsevol altre) -&gt; fi</li>
+<li>Com que no es pot tenir més d’un <strong>workspace</strong> obert, no en podreu crear cap de nou si prèviament no tanqueu el workspace actiu. Si dins del menú de CodeLite veieu la opció <strong>New Workspace</strong> en gris i que no es pot seleccionar, significa que ja teniu un workspace obert. Per tancar-lo: <strong>CodeLite</strong> -&gt; <strong>Workspace</strong> -&gt; <strong>Close Workspace</strong>.</li>
+<li>Per afegir un projecte a un workspace: <strong>CodeLite</strong> -&gt; <strong>File</strong> -&gt; <strong>New</strong> -&gt; <strong>New Project</strong> -&gt; de tipus <strong>Console</strong>: <code>Simple executable (gcc)</code> -&gt; <strong>Project name</strong>: el que correspongui -&gt; <strong>Compiler</strong>: <code>GCC</code>; <strong>Debugger</strong>: <code>GNU gdb debugger</code> -&gt; fi</li>
+<li>El projecte que acabem de crear conté un programa <code>hello world</code> de mostra, que si executem mostra el missatge <em>“hello world”</em> per pantalla. Aquest programa en C el podem editar i afegir/treure tot allò que volem. És aquí dins on hem de codificar els nostres programes en C (<strong>no</strong> els algorismes!).</li>
+<li>Si tenim més d’un projecte dins d’un workspace, la forma que tenim per indicar quin d’ells és el que està actiu és fent <strong>doble clic</strong> sobre el nom del projecte. Veureu que el nom queda remarcat en <strong><em>negreta i cursiva</em></strong>: a partir d’aquest moment, aquest serà el projecte que compilarem i executarem des de les opcions del menú de CodeLite. Tot i que estiguem visualitzant per pantalla el codi d’un altre projecte, la compilació i execució sempre es farà del projecte actiu.</li>
+<li>Per mostrar la barra d’eines (icones) a la part superior: <strong>CodeLite</strong> -&gt; <strong>View</strong> -&gt; <strong>Show toolbar</strong>.</li>
+<li>La icona del <strong>play</strong> de color verd cap a la dreta de la toolbar és per <strong>debuggar</strong>, no per compilar.</li>
+<li>Per compilar i executar podem fer: <strong>CodeLite</strong> -&gt; <strong>Build</strong> -&gt; <strong>Build and run project</strong>. També es pot compilar amb la icona de la toolbar de la fletxa blanca avall amb fons verd, i executar amb la icona de les rodes dentades grises.</li>
+<li>El resultat de l’execució del programa es mostrarà en una pantalla nova tipus terminal. És important anar tancant aquestes finestres una vegada ja hem comprovat el resultat de l’execució.</li>
+</ul>
+</div>
+<div id="com-activar-un-projecte" class="section level2" number="13.5">
+<h2 number="13.5"><span class="header-section-number">13.5</span> Com activar un projecte</h2>
+<p>Dins de CodeLite, a la part esquerra es mostren tots els projects que s’han creat al workspace. Si ens fixem en el nom de tots ells, veurem que un està remarcat en negreta; per exemple podem tenir:</p>
+<ul>
+<li>PAC01</li>
+<li><strong>PAC02</strong></li>
+<li>PAC03</li>
+<li>PAC04</li>
+</ul>
+<p>Això significa que quan anem a <strong>CodeLite</strong> –&gt; <strong>Build</strong> –&gt; <strong>Build and Run Project</strong>, s’executarà l’acció sobre el project <strong>PAC02</strong>, tot i que per pantalla s’estigui mostrant el codi d’un altre project.</p>
+<p>Si es fa <strong>doble clic</strong> amb el ratolí sobre el nom del project <strong>PAC04</strong>, ara veurem:</p>
+<ul>
+<li>PAC01</li>
+<li>PAC02</li>
+<li>PAC03</li>
+<li><strong>PAC04</strong></li>
+</ul>
+<p>A partir d’aquest moment, el <strong>Build and Run Project</strong> s’aplicarà sobre <strong>PAC04</strong>.</p>
+</div>
+<div id="canviar-idioma-del-teclat" class="section level2" number="13.6">
+<h2 number="13.6"><span class="header-section-number">13.6</span> Canviar idioma del teclat</h2>
+<p>Per canviar l’idioma del teclat a LLubuntu, cal clicar amb el botó dret del ratolí sobre la barra grisa superior -&gt; <strong>Add/Remove Panel Items</strong> -&gt; pestanya <strong>Panel Applets</strong> -&gt; botó <strong>Add</strong> -&gt; seleccionas el plugin <strong>Keyboard Layout Handler</strong> -&gt; <strong>Add</strong> -&gt; <strong>Close</strong>.</p>
+<p>En aquests moments a la part superior dreta es mostrarà l’idioma definit per defecte pel teclat -&gt; marcar sobre la bandera amb el botó dret -&gt; <strong>“Keyboard Layout Handler” settings</strong> -&gt; desmarcar l’opció <strong>Keep system layout</strong> -&gt; es pot afegir l’idioma que es vulgui des del botó <strong>Add</strong>; es pot prioritzar un idioma o l’altre posant-lo en primera posició a la llista. Una vegada s’hagi guardat la configuració desitjada, ja haurà canviat la disposició del teclat al nou idioma.</p>
+<p>Si s’han deixat definits varis idiomes a la llista, cada vegada que marqueu sobre la bandera de la part superior dreta, farà un canvi a l’altre idioma de la llista.</p>
+</div>
+<div id="programa-per-defecte-al-crear-un-projecte" class="section level2" number="13.7">
+<h2 number="13.7"><span class="header-section-number">13.7</span> Programa per defecte al crear un projecte</h2>
+<p>Cada vegada que es crea un nou projecte a CodeLite, per defecte sempre conté el codi del programa <code>hello world</code>:</p>
+<p>
+<img src="img/c.png" style="float:left; padding:10px" />
+</p>
+<div class="sourceCode" id="cb235"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb235-1"><a href="vmware-i-codelite.html#cb235-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb235-2"><a href="vmware-i-codelite.html#cb235-2"></a></span>
+<span id="cb235-3"><a href="vmware-i-codelite.html#cb235-3"></a><span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv)</span>
+<span id="cb235-4"><a href="vmware-i-codelite.html#cb235-4"></a>{</span>
+<span id="cb235-5"><a href="vmware-i-codelite.html#cb235-5"></a>    printf(<span class="st">&quot;hello world</span><span class="sc">\n</span><span class="st">&quot;</span>);</span>
+<span id="cb235-6"><a href="vmware-i-codelite.html#cb235-6"></a>    <span class="cf">return</span> <span class="dv">0</span>;</span>
+<span id="cb235-7"><a href="vmware-i-codelite.html#cb235-7"></a>}</span></code></pre></div>
+<p>Per tant, quan volem crear el nostre propi programa, només cal esborrar el programa que crea per defecte i començar a codificar el teu programa nou.</p>
+<p>Si malgrat tot no es vol que es mostri aquest codi cada vegada, podem modificar el codi per defecte associat als nous projectes:</p>
+<ul>
+<li>Editar l’arxiu <code>/usr/share/codelite/templates/projects/executable/main.cpp</code>, que és el que es carrega per defecte en crear cada nou projecte.</li>
+<li>Crear un nou template de CodeLite i utilitzar-lo en el moment de crear un nou projecte. La creació d’un nou templates es fa a partir d’un projecte que tinguem -&gt; botó dret sobre el nom del projecte -&gt; <code>Save as template...</code>.</li>
+</ul>
+</div>
+<div id="com-fixar-el-kernel-dinici-amb-lubuntu" class="section level2" number="13.8">
+<h2 number="13.8"><span class="header-section-number">13.8</span> Com fixar el kernel d’inici amb Lubuntu</h2>
+<p>Tot i ser una situació gens habitual, es pot donar el cas que Lubuntu només ens arranqui en un determinat kernel per problemes amb determinades targetes gràfiques.</p>
+<p>Tot i que el kernel sempre es pot seleccionar en el moment d’inici de Lubuntu, podem fixar quin és el que volem utilitzar malgrat que aquest no sigui el més nou de tots. Una possible opció per fer-ho amb l’aplicació <strong>Grub Customizer</strong>; per instal·lar-la fem:</p>
+<pre><code>sudo add-apt-repository ppa:danielrichter2007/grub-customizer</code></pre>
+<p>Ens identifiquem amb la password de l’usuari <strong>uoc</strong>.</p>
+<p>A continuació, actualitzem la llista de packages de tots els repositoris:</p>
+<pre><code>sudo apt-get update
+sudo apt-get install grub-customizer</code></pre>
+<p>En aquest punt haurem instal·lat <strong>Grub Customizer</strong> dins de la màquina virtual <strong>FP20181</strong>: aquest programa ens permetrà confirmar exactament què hi ha definit a l’arranc grub de la màquina virtual. Per executar el programa: icona de <strong>Lubuntu</strong> —&gt; <strong>System Tools</strong> —&gt; <strong>Grub Customizer</strong> —&gt; posar contrasenya <strong>uoc</strong> —&gt; a la pestanya inicial <strong>List configuration</strong> es mostren tots els kernels de què disposa l’entorn en aquests moments.</p>
+<p>Es recomanable fer una còpia prèvia de les PAC/PR que puguem tenir dins de la <strong>FP20181</strong> abans de canviar el kernel d’inici. Per canviar el kernel d’arranc per defecte: <strong>Grub Customizer</strong> -&gt; pestanya <strong>General Settings</strong> -&gt; com a <strong>default entry</strong>, seleccionar el kernel que funciona correctament d’entre tots els disponibles. Una vegada escollit, es prem el botó <strong>Save</strong> de la part superior esquerra.</p>
+<p>Per aplicar el canvi que s’acaba de desar a l’arranc de Lubuntu cal obrir un terminal de Lubuntu des de <strong>System Tools</strong> -&gt; <strong>LXTerminal</strong>, i des del terminal teclejar:</p>
+<pre><code>sudo update-grub</code></pre>
+<p>Una vegada hagi finalitzat el procés, cal realitzar un reboot de la <strong>FP20181</strong> per tal que agafi ara per defecte el kernel escollit.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="pr2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="altres.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/13-CodeLite.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["FAQ_Laboratori_FP.pdf", "FAQ_Laboratori_FP.epub"],
+"toc": {
+"collapse": "section",
+"toc": true,
+"toc_float": true,
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
